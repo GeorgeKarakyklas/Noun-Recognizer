@@ -38,11 +38,11 @@ public class Main {
 			Class.forName ("org.h2.Driver");
 			Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test","sa","12345");
 			
-			ArrayList<String> content = DatabaseTest.getAllContent(conn);	
+			ArrayList<String> content = Database.getAllContent(conn);	
 			String inputSentences = content.get(0);
 			String sentences[] = sdetector.sentDetect(inputSentences);
 			for (int i=0; i< sentences.length; i++ ) {
-			name.findTerms(sentences[i]);
+			Noun.findTerms(sentences[i]);
 			}
 
 			conn.close();
@@ -53,3 +53,4 @@ public class Main {
 	}
 	
 }
+
