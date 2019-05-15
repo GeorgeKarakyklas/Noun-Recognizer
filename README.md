@@ -7,3 +7,9 @@ The next piece is a simple noun-recognizer. It uses Open-NLP’s model built for
 The last ingredient of this project is Princeton’s Wordnet database, which the application is also connected to. Wordnet is more than a dictionary on its own. It pairs words with many other related terms, helping the application offer a better content-search capability and offering the user more recommendation options.
 
 Requirements:
+Install OpenNLP: https://opennlp.apache.org/download.html and add all libraries
+Dowload H2 database engine and create a local database with 2 columns of mock data(User, Sentence)
+
+Additional libraries used:
+Jaws: https://mvnrepository.com/artifact/edu.smu.cse/jaws/1.3
+H2: http://repo2.maven.org/maven2/com/h2database/h2/1.4.199/h2-1.4.199.jar (automatic download)
