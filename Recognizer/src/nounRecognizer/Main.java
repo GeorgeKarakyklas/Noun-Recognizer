@@ -21,7 +21,7 @@ public class Main {
 	
 	public static void main(String[] args) {
 		SentenceDetectorME sdetector = null;
-		 String TRAINED_SENTENCE_DATA = "C:/Users/sebal/Desktop/to-G+A/en-sent.bin";
+		 String TRAINED_SENTENCE_DATA = "C:/Users/(CHANGE ME)/Desktop/Noun-Recognizer-master/en-sent.bin";
 		
 		try {
 			//load the English language sentence model
