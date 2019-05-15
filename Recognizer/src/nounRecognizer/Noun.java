@@ -26,7 +26,7 @@ public class Noun{
 	                //System.out.println("Name Entity : "+s.toString());
 	                for(int i=s.getStart(); i<s.getEnd(); i++) {
 	               // System.out.println(sentence[i]);
-	                WordNetTest.findSynonyms(sentence[i]);
+	                Synonym.findSynonyms(sentence[i]);
 	                }
 	            }
 	    }
