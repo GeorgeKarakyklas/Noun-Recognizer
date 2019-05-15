@@ -13,7 +13,7 @@ public class Synonym {
 	}
 	
 	public static void findSynonyms(String word) {
-		System.setProperty("wordnet.database.dir", "C://Users//sebal//Desktop//to-G+A//dict");
+		System.setProperty("wordnet.database.dir", "C://Users//(CHANGE ME)//Desktop//Noun-Recognizer-master//dict");
 		String wordForm = word;
 		//  Get the synsets containing the word form
 		WordNetDatabase database = WordNetDatabase.getFileInstance();
