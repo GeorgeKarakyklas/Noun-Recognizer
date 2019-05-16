@@ -36,7 +36,7 @@ public class Main {
 		try {   	
 			//detect sentences from database input
 			Class.forName ("org.h2.Driver");
-			Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test","sa","12345");
+			Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test","username","password");
 			
 			ArrayList<String> content = Database.getAllContent(conn);
 			for (int i=0; i<content.size();i++){
