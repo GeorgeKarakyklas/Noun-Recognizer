@@ -38,11 +38,13 @@ public class Main {
 			Class.forName ("org.h2.Driver");
 			Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test","sa","12345");
 			
-			ArrayList<String> content = Database.getAllContent(conn);	
-			String inputSentences = content.get(0);
+			ArrayList<String> content = Database.getAllContent(conn);
+			for (int i=0; i<content.size();i++){
+			String inputSentences = content.get(i);
 			String sentences[] = sdetector.sentDetect(inputSentences);
-			for (int i=0; i< sentences.length; i++ ) {
-			Noun.findTerms(sentences[i]);
+			for (int j=0; j< sentences.length; j++ ) {
+			Noun.findTerms(sentences[j]);
+			}
 			}
 
 			conn.close();
