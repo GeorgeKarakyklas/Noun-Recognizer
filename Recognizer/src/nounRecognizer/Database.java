@@ -7,7 +7,7 @@ public class Database {
 	public static void main(String[] args) {
 		try {
 			Class.forName ("org.h2.Driver");
-			Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test","sa","12345");
+			Connection conn = DriverManager.getConnection("jdbc:h2:tcp://localhost/~/test","username","password");
 			
 			conn.close();
 		} catch (ClassNotFoundException | SQLException e) {
